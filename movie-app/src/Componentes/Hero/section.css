@@ -1,0 +1,90 @@
+.hero {
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #6c63ff, #ff6584);
+  overflow: hidden;
+}
+
+/* brilho decorativo */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(255,255,255,0.2),
+    transparent 60%
+  );
+}
+
+/* conteúdo */
+.hero-content {
+  position: relative;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* SEARCH */
+.hero-search {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-input {
+  width: 320px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.hero-input:focus {
+  transform: scale(1.03);
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.3);
+}
+
+/* BOTÃO */
+.hero-button {
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #fff;
+  color: #333;
+  transition: 0.2s;
+}
+
+.hero-button:hover {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero-input {
+    width: 100%;
+  }
+}
